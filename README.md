@@ -8,7 +8,7 @@ dyno slug.
 [Heroku supports using multiple buildpacks for an app](https://devcenter.heroku.com/articles/using-multiple-buildpacks-for-an-app).
 
 ```console
-heroku buildpacks:add --index 1 https://github.com/mojodna/heroku-buildpack-jemalloc.git
+heroku buildpacks:add --index 1 https://github.com/producthunt/heroku-buildpack-jemalloc.git
 git push heroku master
 ```
 
@@ -57,7 +57,7 @@ use the latest stable version if this is not set. You will receive an error
 mentioning tar if the version does not exist.
 
 A full list of supported versions and stacks is available on the
-[releases page.](https://github.com/mojodna/heroku-buildpack-jemalloc/releases)
+[releases page.](https://github.com/producthunt/heroku-buildpack-jemalloc/releases)
 
 **note:** This setting is only used during slug compilation. Changing it will
 require a code change to be deployed in order to take affect.
@@ -81,12 +81,12 @@ Artifacts will be dropped in `dist/` based on Heroku stack and jemalloc version.
 
 - `make VERSION=X.Y.Z`
 - `open dist`
-- Go to [releases](https://github.com/mojodna/heroku-buildpack-jemalloc/releases)
+- Go to [releases](https://github.com/producthunt/heroku-buildpack-jemalloc/releases)
 - Edit the release corresponding to each heroku Stack
 - Drag and drop the new build to attach
 
 ### Creating a New Stack
-- Go to [releases](https://github.com/mojodna/heroku-buildpack-jemalloc/releases)
+- Go to [releases](https://github.com/producthunt/heroku-buildpack-jemalloc/releases)
 - Click "Draft a new release"
 - Tag is the name of the Stack (e.g. `heroku-18`)
 - Target is `release-master`
